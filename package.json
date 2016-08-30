@@ -1,0 +1,24 @@
+{
+  "name": "backbone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ab6060118/practice-backbone.git"
+  },
+  "author": "Dauba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ab6060118/practice-backbone/issues"
+  },
+  "homepage": "https://github.com/ab6060118/practice-backbone#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}

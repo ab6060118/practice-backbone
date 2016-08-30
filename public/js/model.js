@@ -1,0 +1,2 @@
+DataModel = Backbone.Model.extend ({
+});
