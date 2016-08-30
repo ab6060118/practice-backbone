@@ -9,17 +9,17 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/getList', function(req,res) {
+app.get('/users', function(req,res) {
   var list = fs.readFileSync('public/list').toString();
   res.send(list);
 });
 
-app.post('/insert', function(req,res) {
+app.post('/users', function(req,res) {
   var id = req.body.id;
   var name = req.body.name;
 });
 
-app.get('/get/:id', function(req,res) {
+app.get('/users/:id', function(req,res) {
   var id = req.params.id;
   var list = fs.readFileSync('public/list').toString();
   list = JSON.parse(list);
