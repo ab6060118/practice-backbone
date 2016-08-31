@@ -19,6 +19,9 @@
   "homepage": "https://github.com/ab6060118/practice-backbone#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-util": "^3.0.7"
   }
 }

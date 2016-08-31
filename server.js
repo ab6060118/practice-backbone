@@ -14,9 +14,17 @@ app.get('/users', function(req,res) {
   res.send(list);
 });
 
-app.post('/users', function(req,res) {
-  var id = req.body.id;
-  var name = req.body.name;
+app.put('/users', function(req,res) {
+  var model = {
+    id: req.body.id,
+    name: req.body.name,
+  };
+
+  var list = fs.readFileSync('public/list').toString();
+  list = JSON.parse(list);
+  list.push(model);
+  var data = JSON.stringify(list);
+  //fs.writeFileSync('public/list', data, {encoding: 'utf8'});
 });
 
 app.get('/users/:id', function(req,res) {
